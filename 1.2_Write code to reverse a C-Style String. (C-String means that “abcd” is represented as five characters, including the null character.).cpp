@@ -3,9 +3,9 @@
 using namespace std;
 
 void swap(char &a, char &b){
-    a = a^b;
-    b = a^b;
-    a = a^b;
+    a = a^b; //XOR
+    b = a^b; //XOR
+    a = a^b; //XOR
 }
 
 void reverse2(char *s){
