@@ -9,7 +9,7 @@ bool isUnique1(string s)
     int len = s.length();
     for(int i=0; i<len; ++i)
     {
-        int v = (int)s[i];
+        int v = (int)s[i]; //直接轉成ASCII代碼，但浪費儲存空間(int:2的32次方bits，ASCII:256bits)
         if(a[v]) return false;
         a[v] = true;
     }
