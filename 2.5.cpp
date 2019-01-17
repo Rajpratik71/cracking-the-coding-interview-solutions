@@ -53,7 +53,7 @@ node* loopstart1(node *head){
     return head;
 }
 int main(){
-    int n = 10, m = 9;// m<n
+    int n = 10, m = 3;// m<n  // 如果 m == 9, 那么 循环链表，就只 在最后的一个 node 中循环，效果没有那么好 
     int a[] = {
         3, 2, 1, 3, 5, 6, 2, 6, 3, 1 
     };
